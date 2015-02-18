@@ -20,7 +20,7 @@ def main(d=0, t=''):
     print '%.01fkm in %s' % (d, t)
     # seconds per km    
     m, s = divmod(secs/d, 60)
-    print '=> %.2f min/km (%02d:%02d)' % (m, m, s)
+    print '=> %.2f min/km (%02d:%02d)' % (secs/(d*60), m, s)
     #seconds per round
     spr = secs/d/2.5
     m, s = divmod(spr, 60)
